@@ -6,6 +6,8 @@ import (
 	"os"
 
 	"github.com/urfave/cli/v2"
+
+	"greet/insert_folder"
 )
 
 func main() {
@@ -35,4 +37,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	insert_folder.TryCall()
+
 }
